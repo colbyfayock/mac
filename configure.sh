@@ -11,7 +11,8 @@ killall Dock 2>/dev/null;
 killall Finder 2>/dev/null;
 
 # Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
 echo "ZSH_DISABLE_COMPFIX=true\n\n$(cat ~/.zshrc)" > ~/.zshrc # https://github.com/ohmyzsh/ohmyzsh/issues/6835
 
 # Copy oh-my-zsh settings
