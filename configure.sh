@@ -27,8 +27,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew install nvm
 mkdir ~/.nvm
 . $(brew --prefix nvm)/nvm.sh
-nvm install 12
-nvm alias default 12
+nvm install 14
+nvm alias default 14
 
 # Install Yarn
 brew install yarn
