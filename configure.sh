@@ -40,7 +40,8 @@ echo "$(cat ~/.zshrc)\n\n$(cat ./nvm/autoload.txt)" > ~/.zshrc
 # Configure git
 cp ./git/.gitignore_global ~/
 git config --global core.editor "nano"
+git config --global core.excludesfile "~/.gitignore_global"
 git config --global user.email "$GIT_EMAIL"
 git config --global user.name "$GIT_NAME"
-git config --global core.excludesfile "~/.gitignore_global"
 git config --global credential.helper osxkeychain; # activate git credentials storage
+git config --global init.defaultBranch main
