@@ -23,8 +23,16 @@ cp ./oh-my-zsh/aliases.zsh ~/.oh-my-zsh/custom
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "/Users/$(whoami)/.zprofile" 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Install nvm
-brew install nvm
+# Packages
+brew install --cask google-chrome \
+                    mas \
+                    nvm \
+                    raycast \
+                    rectangle \
+                    visual-studio-code
+
+# Configure nvm
+
 mkdir ~/.nvm
 . $(brew --prefix nvm)/nvm.sh
 nvm install 14
@@ -40,17 +48,18 @@ npm install yarn -g
 # Install Pnpm
 curl -fsSL https://get.pnpm.io/install.sh | sh -
 
-# Packages
-brew install --cask google-chrome
-brew install --cask raycast
-brew install --cask rectangle
-
 # App Store
-brew install mas
-mas install 497799835 # Xcode
-
-
-
+mas install \
+  937984704 \ # Amphetamine
+  1487937127 \ # Craft
+  498672703 \ # Droplr
+  1480068668 \ # Messenger
+  803453959 \ # Slack
+  966085870 \ # TickTick
+  1284863847 \ # Unsplash Wallpapers
+  1147396723 \ # Whatsapp
+  497799835 \ # Xcode
+  
 # Configure git
 cp ./git/.gitignore_global ~/
 git config --global core.editor "nano"
