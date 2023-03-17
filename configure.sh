@@ -38,8 +38,15 @@ echo "$(cat ~/.zshrc)\n\n$(cat ./nvm/autoload.txt)" > ~/.zshrc
 brew install yarn
 
 # Packages
+brew install --cask google-chrome
 brew install --cask raycast
 brew install --cask rectangle
+
+# App Store
+brew install mas
+mas install 497799835 # Xcode
+
+
 
 # Configure git
 cp ./git/.gitignore_global ~/
