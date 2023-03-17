@@ -30,12 +30,16 @@ mkdir ~/.nvm
 nvm install 14
 nvm alias default 14
 
-# Install Yarn
-brew install yarn
-
 # Add nvm autoload when navigatin to folder
 echo "$(cat ./nvm/source.txt)\n\n$(cat ~/.zshrc)" > ~/.zshrc
 echo "$(cat ~/.zshrc)\n\n$(cat ./nvm/autoload.txt)" > ~/.zshrc
+
+# Install Yarn
+brew install yarn
+
+# Packages
+brew install --cask raycast
+brew install --cask rectangle
 
 # Configure git
 cp ./git/.gitignore_global ~/
