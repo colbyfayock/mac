@@ -26,6 +26,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Packages
 brew install --cask google-chrome \
                     iterm2 \
+                    firefox \
                     mas \
                     nvm \
                     raycast \
