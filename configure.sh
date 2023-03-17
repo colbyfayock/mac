@@ -35,7 +35,10 @@ echo "$(cat ./nvm/source.txt)\n\n$(cat ~/.zshrc)" > ~/.zshrc
 echo "$(cat ~/.zshrc)\n\n$(cat ./nvm/autoload.txt)" > ~/.zshrc
 
 # Install Yarn
-brew install yarn
+npm install yarn -g
+
+# Install Pnpm
+curl -fsSL https://get.pnpm.io/install.sh | sh -
 
 # Packages
 brew install --cask google-chrome
