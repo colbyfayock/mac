@@ -26,6 +26,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Packages
 brew install --cask google-chrome \
                     iterm2 \
+                    dropbox \
                     firefox \
                     mas \
                     nvm \
@@ -71,3 +72,7 @@ git config --global init.defaultBranch main
 git config --global pull.rebase false
 git config --global user.email "$GIT_EMAIL"
 git config --global user.name "$GIT_NAME"
+
+# Dev Environment
+
+mkdir ~/Code
