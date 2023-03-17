@@ -39,7 +39,10 @@ brew install --cask google-chrome \
 mkdir ~/.nvm
 . $(brew --prefix nvm)/nvm.sh
 nvm install 14
-nvm alias default 14
+nvm install 16
+nvm install 18
+nvm install 20
+nvm alias default 18
 
 # Add nvm autoload when navigatin to folder
 echo "$(cat ./nvm/source.txt)\n\n$(cat ~/.zshrc)" > ~/.zshrc
