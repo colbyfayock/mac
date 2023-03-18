@@ -24,7 +24,11 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "/Users/$(whoami)/.zprofile"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Packages
-brew install --cask google-chrome \
+brew install --cask adobe-creative-cloud \
+                    authy \
+                    bartender \
+                    discord \
+                    google-chrome \
                     iterm2 \
                     dropbox \
                     firefox \
@@ -65,6 +69,10 @@ mas install \
   1284863847 \ # Unsplash Wallpapers
   1147396723 \ # Whatsapp
   497799835 \ # Xcode
+
+# Agree to Xcode license
+
+sudo xcodebuild -license accept
   
 # Configure git
 cp ./git/.gitignore_global ~/
