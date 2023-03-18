@@ -28,14 +28,19 @@ brew install --cask adobe-creative-cloud \
                     authy \
                     bartender \
                     discord \
-                    google-chrome \
-                    iterm2 \
                     dropbox \
+                    figma \
                     firefox \
+                    flux \
+                    google-chrome \
+                    iconset \
+                    iterm2 \
                     mas \
                     nvm \
+                    obs \ww
                     raycast \
                     rectangle \
+                    switchresx \
                     visual-studio-code
 
 # Configure nvm
