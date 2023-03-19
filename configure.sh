@@ -32,6 +32,7 @@ brew install --cask adobe-creative-cloud \
                     figma \
                     firefox \
                     flux \
+                    gh \
                     google-chrome \
                     iconset \
                     iterm2 \
