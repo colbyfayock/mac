@@ -27,6 +27,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew install --cask adobe-creative-cloud \
                     authy \
                     bartender \
+                    deno \
                     discord \
                     dropbox \
                     figma \
