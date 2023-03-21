@@ -43,6 +43,7 @@ brew install --cask adobe-creative-cloud \
                     raycast \
                     rectangle \
                     switchresx \
+                    tunnelbear \
                     visual-studio-code
 
 # Configure nvm
